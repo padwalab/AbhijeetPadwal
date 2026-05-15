@@ -1,0 +1,159 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{mutedgray}{RGB}{200, 200, 200}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+\urlstyle{same}
+
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[{\color{mutedgray}\titlerule}]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+
+\usepackage{color}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=black
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	3-COLUMN TOP HEADER STRUCTURE
+%----------------------------------------------------------------------------------------
+\noindent
+\begin{minipage}[t]{0.25\textwidth}
+    \small 
+    \flushleft
+    333 Sunol St, \\
+    \vspace{2pt}
+    San Jose, CA 95126 
+\end{minipage}
+\begin{minipage}[t]{0.50\textwidth}
+    \centering
+    {\Huge \textbf{Abhijeet Padwal}} \\ \vspace{6pt} 
+    \small 
+    \href{https://github.com/padwalab}{github.com/padwalab} $\cdot$ \href{https://linkedin.com/in/abhijeetpadwal}{linkedin.com/in/abhijeetpadwal}
+\end{minipage}
+\begin{minipage}[t]{0.25\textwidth}
+    \small 
+    \flushright
+    +1 (408) 207-8784 \\
+    \vspace{2pt}
+    \href{mailto:padwalab@gmail.com}{padwalab@gmail.com}
+\end{minipage}
+
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Go, Java, Python, JavaScript, Shell Scripting (Bash), SQL} \\
+     \textbf{Distributed Systems}{: Kafka, Flink, Beam, Spark, Stream Processing, Big Data Analytics} \\
+     \textbf{Databases \& Storage}{: PostgreSQL, MongoDB, Redis, Pinot, Kusto, Azure MDM, HDFS, Hive, Trino} \\
+     \textbf{Tools \& Technologies}{: Docker, Kubernetes, Grafana, Grafana plugins, OpenTelemetry, FluentBit}
+    }}
+\end{itemize}
+\vspace{-5pt}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
+\begin{itemize}[leftmargin=0.15in, label={}]
+
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{LinkedIn} & Sunnyvale, CA \\
+      \textit{Sr. Software Engineer (Member Observability Data Platform)} & Jan 2022 -- Present \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}[leftmargin=0.15in, topsep=2pt, itemsep=2pt]
+        \resumeItem{Accelerated processing speeds by leading the migration of crash reporting and site speed pipelines, reducing crash metric latency from 15 minutes to 1 minute and site speed processing from 1 day to 1 minute.}
+        \resumeItem{Built foundational streaming components including Kafka event processing, dimension extraction, event throttling, validation, and metric extraction to enable reusable, real-time processing of observability data.}
+        \resumeItem{Engineered real-time crash pipelines streaming $\sim$500M web/mobile error events daily, conducting stacktrace unminification and symbolication with automated exception ticketing and dark canary validation.}
+        \resumeItem{Designed and operationalized an automated site speed regression detection system for 10+ workflows processing $\sim$10 TB/day of telemetry, cutting manual pipeline interventions by 90\% via automated backfill handling and ticket resolution.}
+        \resumeItem{Integrated performance metrics directly into the A/B testing experimentation platform, making regressions an automated blocker for build ramps and successfully preventing $\sim$200 regressions over 6 months.}
+        \resumeItem{Operationalized metrics by building Grafana dashboards on top of the MDM metric data store, driving down reporting delays and reducing custom alerting time-to-detection to 30 minutes.}
+        \resumeItem{Collaborated with the Abuse security team to implement bot and scraper traffic filters, significantly reducing false-positive regressions and maximizing signal-to-noise across performance alerts.}
+    \end{itemize}
+
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{TIBCO Software Inc.} & Pune, MH, India \\
+      \textit{AMTS, QA} & July 2018 -- Dec 2021 \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}[leftmargin=0.15in, topsep=2pt, itemsep=2pt]
+        \resumeItem{Optimized legacy automation runtime and resolved critical Java heap space and garbage collection bottlenecks by modifying internal test framework configuration build files and jars.}
+        \resumeItem{Validated robust REST-JSON plugin features for the BW5 platform and orchestrated validation workflows for MongoDB plugins deployed on BW6.}
+        \resumeItem{Configured and evaluated distributed Apache Hadoop clusters and containerized applications using Docker to validate big data plugin extensions.}
+    \end{itemize}
+
+\end{itemize}
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	ACADEMIC PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Academic Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{BitCorner (Bitcoin Exchange Platform)} $|$ \textit{\small{Java, Spring Boot, React, Redux, PostgreSQL}} & Apr 2021 -- May 2021 \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}[leftmargin=0.15in, topsep=2pt, itemsep=2pt]
+        \resumeItem{Engineered a fair order execution matching algorithm to process real-time market and limit price transaction requests for cryptocurrency exchange.}
+        \resumeItem{Designed and deployed a microservices-based system architecture to AWS, integrating localized billing and multi-currency exchange handling via JPA ORM.}
+    \end{itemize}
+
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{eDiligence (Containerized Infrastructure Platform)} $|$ \textit{\small{Go, Nginx, Docker, GitHub Actions}} & Aug 2020 -- Dec 2020 \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}[leftmargin=0.15in, topsep=2pt, itemsep=2pt]
+        \resumeItem{Architected a scalable, microservices-oriented backend structure from scratch using Go, optimizing resource allocation to minimize infrastructure deployment costs on DigitalOcean.}
+        \resumeItem{Implemented an Nginx API Gateway alongside continuous integration pipelines (GitHub Actions) integrated with a validation test framework to accelerate artifact build-and-release cycles.}
+    \end{itemize}
+
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Full-Stack Application Clones} $|$ \textit{\small{Reddit, Splitwise}} & \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}[leftmargin=0.15in, topsep=2pt, itemsep=2pt]
+        \resumeItem{Developed full-stack web application clones of Reddit and Splitwise to master advanced state management, relational schema modeling, and complex business logic implementation.}
+    \end{itemize}
+
+\end{itemize}
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{San Jose State University} & San Jose, CA \\
+      \textit{Master of Science in Computer Software Engineering} & Aug 2020 -- May 2022 \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}[leftmargin=0.15in, topsep=2pt, itemsep=2pt]
+        \resumeItem{\textbf{Coursework:} Software Security, Big Data Engineering, Systems Engineering, Distributed Systems, Enterprise Application Development, Data Mining, Advanced Parallel Systems.}
+    \end{itemize}
+
+\end{itemize}
+
+\end{document}

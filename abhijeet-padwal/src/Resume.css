@@ -1,0 +1,224 @@
+/* Resume Styling - Professional & Clean */
+
+.resume {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10pt;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Header */
+.resume-header {
+  margin-bottom: 10pt;
+}
+
+.header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 12pt;
+}
+
+.header-left,
+.header-right {
+  font-size: 9pt;
+  line-height: 1.5;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.header-center h1 {
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0 0 4pt 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+.contact-links {
+  margin: 0;
+  font-size: 9pt;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.contact-links a {
+  color: #0073b1;
+  text-decoration: none;
+  margin: 0 2pt;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Section Headings */
+.resume-section {
+  margin-bottom: 12pt;
+}
+
+.resume-section h2 {
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10pt 0 6pt 0;
+  padding-bottom: 4pt;
+  border-bottom: 1px solid #c8c8c8;
+  letter-spacing: 1px;
+}
+
+/* Skills */
+.skills-content p {
+  margin: 3pt 0;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+
+.skills-content strong {
+  font-weight: 600;
+}
+
+/* Experience */
+.experience-item,
+.project-item,
+.education-item {
+  margin-bottom: 10pt;
+}
+
+.experience-header,
+.project-header,
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2pt;
+}
+
+.experience-header h3,
+.project-header h3,
+.education-header h3 {
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0;
+  flex: 1;
+}
+
+.location,
+.tech {
+  font-size: 10pt;
+  text-align: right;
+  margin-left: auto;
+  padding-left: 1rem;
+  color: #555;
+}
+
+.position,
+.degree {
+  font-size: 10pt;
+  font-style: italic;
+  margin: 2pt 0;
+  color: #444;
+}
+
+.dates {
+  font-size: 10pt;
+  margin: 2pt 0 4pt 0;
+  color: #666;
+}
+
+.coursework {
+  font-size: 10pt;
+  margin: 3pt 0;
+  color: #555;
+}
+
+/* Lists */
+.resume-section ul {
+  margin: 4pt 0;
+  padding-left: 0.2in;
+  list-style-position: inside;
+}
+
+.resume-section li {
+  font-size: 10pt;
+  margin-bottom: 3pt;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* Links */
+a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Print Styles */
+@media print {
+  .resume {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  a {
+    color: #0073b1;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .header-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .header-left,
+  .header-right,
+  .header-center {
+    text-align: center;
+  }
+
+  .location,
+  .tech {
+    text-align: left;
+    display: block;
+    padding-left: 0;
+    margin: 2pt 0 0 0;
+  }
+
+  .experience-header,
+  .project-header,
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume {
+    padding: 1rem;
+    font-size: 11pt;
+  }
+}
